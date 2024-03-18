@@ -1,0 +1,157 @@
+body {
+  background-color: goldenrod;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  font-family: papyrus;
+  font-weight: 600;
+  background-image: url(images/style/background6.jpg);
+}
+
+.gevecht {
+  display: flex;
+  background-size: cover;
+  background-position: center;
+  padding-top: 7%;
+  padding-bottom: 5%;
+}
+
+.healthbar {
+  display: flex;
+  margin-top: -32%;
+}
+
+.healthbar1, .healthbar2 {
+  width: 50%;
+  height: 20%;
+  background-color: chartreuse;
+  border: 5px solid white;
+  border-radius: 40px;
+  text-align: center;
+}
+
+.aang, #vijand {
+  width: 50%;
+}
+
+.aang p, #vijand p {
+  text-align: center;
+  margin: 0;
+  font-size: 200%;
+}
+
+.aang img, #vijand img {
+  width: 40%;
+  margin: auto;
+  display: block;
+}
+
+.aanvalmenu {
+  margin-top: 21%;
+  width: 100%;
+  text-align: center;
+  padding-top: 1%;
+  border-top: 2px solid white;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* ^ fading background bron ^ https://www.shecodes.io/athena/24883-how-to-create-a-fading-image-using-css */
+  border-radius: 150px;
+}
+
+.aanvaldiv {
+  display: block;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.aanval button {
+  width: 13%;
+  background-color: Transparent;
+  border: none;
+}
+
+.aanval button img {
+  width: 89%;
+}
+
+.aanval button:hover {
+  background-color: white;
+  border-radius: 50%;
+  transform: scale(1.17);
+  transition: 0.35s;
+}
+
+#aanvalanimatie {
+  width: 8%;
+  display: block;
+  margin-top: -31.5%;
+  margin-left: 33%;
+  position: absolute;
+  animation: attack 1.4s;
+}
+
+@keyframes attack {
+  100% {
+    transform: translateX(300px) scale(1.5);
+    opacity: 1;
+  }
+}
+
+@keyframes vijandverslagen {
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+}
+
+.vijandVerslagen {
+  animation: vijandverslagen 2s forwards;
+}
+
+.score p {
+  text-align: center;
+  font-size: 200%;
+  margin: 0;
+  color: white;
+}
+
+#muziekknop,
+#zwaktemenu,
+#reloadknop {
+  border-radius: 50%;
+  background-color: black;
+  width: 45px;
+  height: 45px;
+  margin-top: 1%;
+}
+
+#reloadknop {
+  margin-left: 1%;
+}
+
+#muziekafbeelding,
+#menuafbeelding,
+#reloadafbeelding {
+  width: 100%;
+  height: auto;
+}
+
+.menutjes {
+  display: block;
+  margin-top: -0.5%;
+}
+
+#zwakteafbeelding {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* * {
+    border: 1px solid red;
+} */

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avatar Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <div class="gevecht">
+            <div class="aang">
+                <img id="aangplayer" src="images/karakter/airscooteraang.png" alt="Aang">
+            </div>
+            <div id="vijand">
+                <img src="images/karakter/zuko.png" alt="Vijand">
+            </div>
+        </div>
+        <div class="healthbar">
+            <div class="healthbar1">
+                <p>Aang</p>
+            </div>
+            <div class="score">
+                <p>Score: </p>
+                <p id="punten">0</p>
+            </div>
+            <div class="healthbar2">
+                <p>Vijand</p>
+            </div>
+        </div>
+        <div class="aanvalmenu">
+            <div class="aanval">
+                <div class="aanvaldiv">
+                    <button id="waterknop"><img src="images/element/waterknop.png" alt="Water aanval knop"></button>
+                    <button id="aardeknop"><img src="images/element/aardeknop.png" alt="Aarde aanval knop"></button>
+                    <button id="vuurknop"><img src="images/element/vuurknop.png" alt="Vuur aanval knop"></button>
+                    <button id="luchtknop"><img src="images/element/luchtknop.png" alt="Wind aanval knop"></button>
+                    <button id="schildknop"><img src="images/style/schild.png" alt="Block knop"></button>
+                    <button id="stateknop"><img src="images/karakter/avatar_state.png" alt="Avatar State knop"></button>
+                </div>
+            </div>
+        </div>
+        <img id="aanvalanimatie" src="images/element/trans.png" alt="geen aanval">
+        <div class="menutjes">
+            <button id="reloadknop"><img id="reloadafbeelding" src="images/style/reload.png"
+                    alt="site opnieuw laden"></button>
+            <button id="muziekknop"><img id="muziekafbeelding" src="images/style/musicknop.png"
+                    alt="muziekspeler"></button>
+            <button id="zwaktemenu"><img id="menuafbeelding" src="images/style/menuicon.png" alt="zwakte menu"></button>
+            <img id="zwakteafbeelding" src="images/style/zwaktemenu.png" alt="zwaktemenu">
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
