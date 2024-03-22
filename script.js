@@ -162,22 +162,22 @@ function avatarstate(fileName) {
 }
 
 function startaanval() {
-  var aanvalanimatieElement = document.getElementById("aanvalanimatie");
+  let aanvalanimatieElement = document.getElementById("aanvalanimatie");
   aanvalanimatieElement.style.display = "block";
   aanvalanimatieElement.style.animation = "none";
   setTimeout(() => {
     aanvalanimatieElement.style.animation = "";
     setTimeout(() => {
       aanvalanimatieElement.style.display = "none";
-      var aangplayerElement = document.getElementById("aangplayer");
+      let aangplayerElement = document.getElementById("aangplayer");
       aangplayerElement.src = "images/karakter/airscooteraang.png";
     }, 1200);
   }, 1);
 }
 
 function toggleMuziek() {
-  var muziekKnop = document.getElementById("muziekknop");
-  var muziekAfbeelding = document.getElementById("muziekafbeelding");
+  let muziekKnop = document.getElementById("muziekknop");
+  let muziekAfbeelding = document.getElementById("muziekafbeelding");
 
   if (!muziekAan) {
     muziek.play();
@@ -191,7 +191,7 @@ function toggleMuziek() {
 }
 
 function toggleZwakteMenu() {
-  var zwakteAfbeelding = document.getElementById("zwakteafbeelding");
+  const zwakteAfbeelding = document.getElementById("zwakteafbeelding");
   if (zwakteAfbeelding.style.display === "none") {
     zwakteAfbeelding.style.display = "block";
   } else {
